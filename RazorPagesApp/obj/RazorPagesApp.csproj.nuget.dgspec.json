@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\RazorPagesApp\\RazorPagesApp.csproj": {}
+    "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\Web_6\\RazorPagesApp\\RazorPagesApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\RazorPagesApp\\RazorPagesApp.csproj": {
+    "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\Web_6\\RazorPagesApp\\RazorPagesApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\RazorPagesApp\\RazorPagesApp.csproj",
+        "projectUniqueName": "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\Web_6\\RazorPagesApp\\RazorPagesApp.csproj",
         "projectName": "RazorPagesApp",
-        "projectPath": "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\RazorPagesApp\\RazorPagesApp.csproj",
+        "projectPath": "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\Web_6\\RazorPagesApp\\RazorPagesApp.csproj",
         "packagesPath": "C:\\Users\\sisis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\RazorPagesApp\\obj\\",
+        "outputPath": "C:\\Users\\sisis\\OneDrive\\Рабочий стол\\Web_6\\RazorPagesApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Visual Studio Pockets\\NuGetPackages"
@@ -49,6 +49,22 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
