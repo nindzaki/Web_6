@@ -1,0 +1,48 @@
+﻿@page
+@model RazorPagesApp.Pages.Products.IndexModel
+
+<h2>Запросы по товарам</h2>
+
+<form method="get">
+    <div class="form-group">
+        <label>Отдел магазина:</label>
+        <input type="text" asp-for="DepartmentFilter" class="form-control" />
+        <input type="submit" value="Найти товары в отделе" class="btn btn-primary" />
+    </div>
+</form>
+
+@if (Model.ProductsInDepartment.Any())
+{
+    <h3>Товары в отделе @Model.DepartmentFilter</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Цена</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.ProductsInDepartment)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Price.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<form method="get">
+    <div class="form-group">
+        <label>Название товара:</label>
+        <input type="text" asp-for="ProductNameFilter" class="form-control" />
+        <input type="submit" value="Рассчитать суммарную стоимость" class="btn btn-primary" />
+    </div>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ProductNameFilter))
+{
+    <h3>Суммарная стоимость товара "@Model.ProductNameFilter"</h3>
+    <p>@Model.TotalPriceForProduct.ToString("C")</p>
+}
