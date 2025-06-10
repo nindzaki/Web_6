@@ -2,10 +2,10 @@
 @model RazorPagesApp.Pages.Movies.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Детали";
 }
 
-<h1>Details</h1>
+<h1>Детали</h1>
 
 <div>
     <h4>Movie</h4>
@@ -44,6 +44,6 @@
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Movie.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Edit" asp-route-id="@Model.Movie.Id">Редактировать</a> |
+    <a asp-page="./Index">Вернуться к списку</a>
 </div>
